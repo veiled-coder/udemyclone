@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/322a1124a5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="desktop-nav nav">
+            <img src="./images/logo-udemy.svg" alt="udemy-logo icon" class="udemy-logo">
+            <p> Categories</p>
+            <input type="text" placeholder="search for anything" class="search">
+            <p>Udemy Business</p>
+            <p>Teach on Udemy</p>
+            <i class="fa-solid fa-shopping-cart"></i>
+            <a href="#" target="_blank" class="login">Login</a>
+            <a href="#" target="_blank" class="signup">Sign up</a>
+            <a href="#" target="_blank" class="globe"><i class="fa-solid fa-globe"></i></a>
+
+        </div>
+        <!--MOBILE NAVIGATION MENU  -->
+        <div class="nav mobile-nav">
+            <i class="fa-solid fa-bars"></i>
+            <img src="./images/logo-udemy.svg" alt="udemy-logo icon" class="udemy-logo">
+            <div class="cart">
+                <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-shopping-cart cart"></i>
+
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header-image_container">
+            <img src="./images/header-img.jpg">
+            <div class="header-hero_box">
+                <h1>Learning that gets you</h1>
+                <p>Skills for your present(and your future). Get started with us.</p>
+                <input type="text" placeholder="What do u want to learn?" class="mobile-search">
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="learn">
+            <h3>Learning that gets you</h3>
+            <p>Skills for your present(and your future). Get started with us.</p>
+        </div>
+        <input type="text" placeholder="What do u want to learn?" class="main-search">
+
+        <h3>
+            A broad selection of courses
+        </h3>
+        <p>Choose from 213,000 online video courses with new additions published every month</p>
+        <div class="courses">
+            <a href="#" class="python">Python <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+            <a href="#">Excel <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+            <a href="#">Web Development <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+            <a href="#">Javascript <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+            <a href="#">Data Science <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+            <a href="#">AWS Certification <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+            <a href="#">Drawing <span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+
+        </div>
+        <section class="course-python">
+            <div class="course-python_text">
+                <h4>Expand your career opportunities with Python</h4>
+                <p>
+                    Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful
+                    language.
+                    Its simple
+                    syntax and readability makes Python perfect for Flask, Django, data science, and machine learning.
+                    You’ll learn how to
+                    build everything from games to sites to apps. Choose from a range of courses that will appeal to...
+                </p>
+                <a href="#" target="_blank" class="explore">Explore Python</a>
+            </div>
+            <!-- <div class="course-topics">
+                <div class="course-topics_box">
+                    box1
+                </div>
+            </div> -->
+            <div class="course-topics">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div>1</div>
+                            <div>1</div>
+                            <div>1</div>
+                            <div>1</div>
+
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+            </div>
+
+
+        </section>
+    </main>
+    <!-- Slider main container -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+
+</html>

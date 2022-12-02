@@ -1,0 +1,269 @@
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --paddingLR: 10%;
+  --gray: #6a6f73;
+  --light-gray: #e5e5e5;
+}
+.nav {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 3px 4px 4px rgba(41, 43, 41, 0.373);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 4;
+}
+.udemy-logo {
+  display: block;
+  width: 6rem;
+}
+.search {
+  width: 40%;
+  padding: 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  background: url(./images/search-icon.png);
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-position: 1rem 1rem;
+  background-color: #f7f9fa;
+  text-indent: 2rem;
+}
+.login,
+.signup {
+  padding: 0.7em 1.4em;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+}
+.signup {
+  background-color: black;
+  color: white;
+}
+.globe {
+  color: black;
+}
+.cart {
+  margin-left: 1rem;
+}
+/* HEADER STYLES */
+header {
+  height: 50vh;
+
+  z-index: -2;
+  position: relative;
+}
+.header-image_container {
+  height: 100%;
+  padding: 0rem var(--paddingLR);
+}
+.header-image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70%;
+}
+.header-hero_box {
+  background: white;
+
+  position: absolute;
+
+  left: 15rem;
+  top: 4rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  width: 500px;
+}
+
+.header-hero_box p {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  line-height: 1.4;
+}
+.header-hero_box h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+.mobile-search,
+.main-search {
+  display: none;
+}
+/* MAIN SECTION STYLING */
+main {
+  padding: 1rem var(--paddingLR);
+}
+main .learn {
+  display: none;
+}
+.main-search {
+  width: 100%;
+  padding: 1rem 0;
+  text-indent: 1rem;
+  background: url(./images/search-icon.png) no-repeat;
+  background-size: 1rem;
+  background-position: 90%;
+  border: 1px solid #1c1d1f;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h3 + p {
+  font-size: 1.5rem;
+}
+.courses {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+.courses a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--gray);
+  font-weight: bold;
+}
+.courses a:hover {
+  color: black;
+}
+.courses a span {
+  visibility: hidden;
+}
+/* COURSE PYTHON STYLING */
+
+.course-python {
+  border: 1px solid var(--light-gray);
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+h4 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+h4 + p {
+  font-size: 1.2rem;
+  width: 70%;
+  line-height: 1.4;
+}
+.course-python .explore {
+  padding: 1em;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  color: black;
+}
+.course-topics{
+    margin-top: 2rem;
+}
+.course-topics_box{
+    width: 20rem;
+    border: 1px solid red;
+    height: 20rem;
+}
+.swiper {
+  
+  height: 300px;
+  background-color: gray;
+}
+.swiper-slide{
+    display: flex;
+}
+.swiper-slide div{
+    flex: 1;
+    background-color: pink;
+}
+/* MEDIA QUERIES */
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1400px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --paddingLR: 5%;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-search {
+    display: block;
+  }
+  .nav {
+    padding: 1rem var(--paddingLR);
+  }
+  .header-hero_box {
+    display: none;
+  }
+
+  .header-image_container {
+    padding: 0rem;
+  }
+  main p {
+    font-size: 1rem;
+  }
+  main .learn {
+    display: block;
+  }
+  .main-search {
+    display: block;
+  }
+  .courses {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .courses::-webkit-scrollbar {
+    width: 0;
+  }
+  .courses a {
+    min-width: fit-content;
+    margin-right: 2rem;
+    font-size: 1rem;
+  }
+  h4 +p{
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .course-python_text {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .courses {
+    display: block;
+
+    line-height: 2;
+    padding-top: 0;
+  }
+  .courses a {
+    display: block;
+    border-top: 1px solid var(--light-gray);
+    width: 100%;
+    color: black;
+  }
+  .courses a span {
+    visibility: visible;
+    float: right;
+  }
+}
