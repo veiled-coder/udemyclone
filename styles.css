@@ -347,7 +347,7 @@ h4 + p {
 }
 .text {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 
   text-align: left;
   line-height: 1.5;
@@ -449,6 +449,11 @@ h4 + p {
   }
   .box2 {
     height: 15rem;
+  }
+  .get,.learnMore{
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
