@@ -213,14 +213,17 @@ h4 + p {
   font-size: 1rem;
 }
 /* TOP CATEGORIES STYLING */
-
+ h3{
+  margin: 2rem 0;
+}
 .categories-list img {
   width: 100%;
 }
 .categories-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  grid-gap: 1rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 }
 .categories-list p {
   font-size: 1.2rem;
@@ -230,12 +233,13 @@ h4 + p {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1rem;
+  row-gap: 1rem;
 }
 .mobile-categories p {
   padding: 1em 0.8em;
   border: 1px solid black;
   border-radius: 50px;
-  margin-bottom: -0.5rem;
+
   font-weight: bold;
 }
 /* FEATURED STYLING */
@@ -308,23 +312,21 @@ h4 + p {
 
 .udemy-business {
   padding: 3rem 20%;
-  /* margin-top: 4rem; */
+
   display: flex;
   gap: 2rem;
   flex-direction: row;
 }
 
 .box {
-  height: 25rem;
   width: 50%;
 }
 
 .box2 {
-  /* background-color: pink; */
   background-image: url(./images/woman.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%; */
+
   background-position: top;
 }
 
@@ -439,6 +441,9 @@ h4 + p {
   }
   .box {
     width: 100%;
+  }
+  .box2 {
+    height: 15rem;
   }
 }
 @media (max-width: 600px) {
