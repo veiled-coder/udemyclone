@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   z-index: 1;
+  line-height: 1.5;
 }
 
 :root {
@@ -13,7 +14,12 @@ body {
   --light-gray: #f8f9fb;
   --orange: #d16e42;
   --blue: #5624d0;
-  --dark-gray:#1c1d1f;
+  --dark-gray: #1c1d1f;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 nav {
@@ -275,28 +281,88 @@ h4 + p {
   display: inline-block;
 }
 /* TRUST COMPANIES STYLINGS */
-.trust-companies{
+.trust-companies {
   text-align: center;
   padding: 3rem var(--paddingLR);
   line-height: 1.5;
 }
-.trust-companies .trust-title{
+.trust-companies .trust-title {
   font-weight: bold;
   font-size: 1.7rem;
   margin: 0;
 }
-.trust-companies p{
+.trust-companies p {
   font-size: 1.2rem;
   color: var(--dark-gray);
   margin: 0;
   letter-spacing: 1;
 }
-.trust-companies_logo{
+.trust-companies_logo {
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
   flex-wrap: wrap;
   gap: 1rem;
+}
+/* UDEMY BUSINESS STYLES */
+
+.udemy-business {
+  padding: 3rem 20%;
+  /* margin-top: 4rem; */
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+
+.box {
+  height: 25rem;
+  width: 50%;
+}
+
+.box2 {
+  /* background-color: pink; */
+  background-image: url(./images/woman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100%; */
+  background-position: top;
+}
+
+.box1 .udemy-businessLogo {
+  width: 10rem;
+}
+.upskill {
+  margin: 0;
+}
+
+.circle {
+  font-size: 0.5rem;
+  margin-right: 1rem;
+}
+.text {
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+.get,
+.learn {
+  padding: 1em 0.7em;
+  border: 1px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.get {
+  background-color: black;
+  color: white;
+}
+.info {
+  margin-top: 1.5rem;
 }
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
@@ -359,12 +425,27 @@ h4 + p {
   h4 + p {
     width: 100%;
   }
+  .udemy-business {
+    padding: 2rem var(--paddingLR);
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .business-box1 {
+    text-align: center;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+  .box {
+    width: 100%;
+  }
 }
 @media (max-width: 600px) {
   .course-python_text {
     display: none;
   }
-  .trust-companies_logo img{
+  .trust-companies_logo img {
     width: 4rem;
   }
 }
@@ -412,5 +493,4 @@ h4 + p {
     display: block;
     text-align: center;
   }
-
 }
