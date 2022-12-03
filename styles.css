@@ -137,12 +137,14 @@ h3 + p {
   justify-content: space-between;
   width: 80%;
   align-items: center;
+  margin-top: 2rem;
 }
 .courses a {
   text-decoration: none;
   font-size: 1.5rem;
   color: var(--gray);
   font-weight: bold;
+  
 }
 .courses a:hover {
   color: black;
@@ -150,6 +152,7 @@ h3 + p {
 .courses a span {
   visibility: hidden;
 }
+
 /* COURSE PYTHON STYLING */
 
 .course-python {
@@ -213,9 +216,7 @@ h4 + p {
   font-size: 1rem;
 }
 /* TOP CATEGORIES STYLING */
- h3{
-  margin: 2rem 0;
-}
+
 .categories-list img {
   width: 100%;
 }
@@ -351,8 +352,7 @@ h4 + p {
   margin: 0;
   padding: 0;
 }
-.get,
-.learn {
+.get,.learnMore {
   padding: 1em 0.7em;
   border: 1px solid black;
   text-decoration: none;
@@ -463,7 +463,7 @@ h4 + p {
   }
   .courses a {
     display: block;
-    border-top: 1px solid var(--light-gray);
+    border-top: 1px solid var(--gray);
     width: 100%;
     color: black;
     padding: 0.7rem 0;
