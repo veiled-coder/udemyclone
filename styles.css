@@ -146,7 +146,6 @@ h3 + p {
   font-size: 1.5rem;
   color: var(--gray);
   font-weight: bold;
-  
 }
 .courses a:hover {
   color: black;
@@ -154,7 +153,6 @@ h3 + p {
 .courses a span {
   visibility: hidden;
 }
-
 
 /* COURSE PYTHON STYLING */
 
@@ -308,6 +306,7 @@ h4 + p {
 .trust-companies_logo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 1.5rem;
   flex-wrap: wrap;
   gap: 1rem;
@@ -316,21 +315,21 @@ h4 + p {
 
 .udemy-business {
   padding: 3rem 20%;
-
   display: flex;
   gap: 2rem;
   flex-direction: row;
 }
 
-.box {
+.box,
+.instructor-box {
   width: 50%;
+  height: 25rem;
 }
 
 .box2 {
   background-image: url(./images/woman.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   background-position: top;
 }
 
@@ -348,14 +347,14 @@ h4 + p {
 .text {
   display: flex;
   align-items: baseline;
-
   text-align: left;
   line-height: 1.5;
   font-size: 1.3rem;
   margin: 0;
   padding: 0;
 }
-.get,.learnMore {
+.get,
+.learnMore {
   padding: 1em 0.7em;
   border: 1px solid black;
   text-decoration: none;
@@ -368,6 +367,32 @@ h4 + p {
 }
 .info {
   margin-top: 1.5rem;
+}
+/* instructor styles */
+.instructor {
+  display: flex;
+  padding: 2rem 20%;
+  color: black;
+}
+.instructor div {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.instructor-img img {
+  width: 80%;
+  height: 100%;
+}
+.teach {
+  padding: 1em 0.8em;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
@@ -394,7 +419,6 @@ h4 + p {
   }
   .mobile-search {
     display: block;
-  
   }
   .nav {
     padding: 1rem var(--paddingLR);
@@ -435,7 +459,6 @@ h4 + p {
   .udemy-business {
     padding: 2rem var(--paddingLR);
     flex-direction: column-reverse;
-    justify-content: flex-end;
   }
   .business-box1 {
     text-align: center;
@@ -444,16 +467,31 @@ h4 + p {
   .text {
     font-size: 1rem;
   }
-  .box {
+  .box,
+  .instructor div {
     width: 100%;
   }
-  .box2 {
-    height: 15rem;
-  }
-  .get,.learnMore{
+
+  .get,
+  .learnMore {
     display: block;
     margin-bottom: 1rem;
     text-align: center;
+  }
+
+  .instructor {
+    padding: 2rem var(--paddingLR);
+    flex-direction: column;
+  }
+  .instructor div {
+    align-items: center;
+    text-align: center;justify-content: flex-start;
+   
+  }
+  
+  .teach{
+    align-self:stretch;
+
   }
 }
 @media (max-width: 600px) {
@@ -462,6 +500,9 @@ h4 + p {
   }
   .trust-companies_logo img {
     width: 4rem;
+  }
+  .instructor-text p{
+    font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
@@ -508,4 +549,15 @@ h4 + p {
     display: block;
     text-align: center;
   }
+  .box2 {
+    height: 15rem;
+  }
+  .instructor div{
+    height: 15rem;
+    
+  }
+  .instructor-img img{
+    height: 100%;
+  }
+  
 }
