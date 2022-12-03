@@ -110,6 +110,7 @@ header {
 .main-search {
   display: none;
 }
+
 /* MAIN SECTION STYLING */
 main {
   padding: 1rem var(--paddingLR);
@@ -128,6 +129,7 @@ main .learn {
 }
 h3 {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 h3 + p {
   font-size: 1.5rem;
@@ -152,6 +154,7 @@ h3 + p {
 .courses a span {
   visibility: hidden;
 }
+
 
 /* COURSE PYTHON STYLING */
 
@@ -391,6 +394,7 @@ h4 + p {
   }
   .mobile-search {
     display: block;
+  
   }
   .nav {
     padding: 1rem var(--paddingLR);
@@ -410,6 +414,7 @@ h4 + p {
   }
   .main-search {
     display: block;
+    margin: 2rem 0;
   }
   .courses {
     display: flex;
@@ -469,7 +474,7 @@ h4 + p {
     padding: 0.7rem 0;
   }
   .drawing {
-    border-bottom: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--gray);
   }
   .courses a span {
     visibility: visible;
