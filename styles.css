@@ -394,6 +394,54 @@ h4 + p {
   margin-top: 1rem;
   font-size: 1.2rem;
 }
+/* footer styles */
+footer {
+  background-color: black;
+  padding: 3rem 4rem;
+}
+.footer-flex {
+  
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-flex div {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  font-size: 1rem;
+}
+.footer-flex div a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-flex div a:hover {
+  text-decoration: underline;
+}
+.udemy-copyright {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 3rem;
+  align-items: flex-start;
+}
+.udemy-copyright img {
+  width: 5rem;
+}
+footer .container-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.english{
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 1em 2em;
+  font-weight: bold;
+}
 /* MEDIA QUERIES */
 @media (min-width: 992px) {
   .mobile-nav,
@@ -485,14 +533,18 @@ h4 + p {
   }
   .instructor div {
     align-items: center;
-    text-align: center;justify-content: flex-start;
-   
+    text-align: center;
+    justify-content: flex-start;
   }
-  
-  .teach{
-    align-self:stretch;
 
+  .teach {
+    align-self: stretch;
   }
+footer .container-footer{
+flex-direction: column-reverse;
+}
+.footer-flex {
+margin-top: 2rem;
 }
 @media (max-width: 600px) {
   .course-python_text {
@@ -501,7 +553,7 @@ h4 + p {
   .trust-companies_logo img {
     width: 4rem;
   }
-  .instructor-text p{
+  .instructor-text p {
     font-size: 1rem;
   }
 }
@@ -552,12 +604,18 @@ h4 + p {
   .box2 {
     height: 15rem;
   }
-  .instructor div{
+  .instructor div {
     height: 15rem;
-    
   }
-  .instructor-img img{
+  .instructor-img img {
     height: 100%;
   }
-  
+  .udemy-copyright{
+    flex-direction: column;
+      font-size: .7rem;
+  }
+  footer{
+    padding: 2rem var(--paddingLR);
+  }
 }
+  
